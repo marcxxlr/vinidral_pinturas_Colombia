@@ -433,7 +433,7 @@ footer{
     .menu-button {
         top: 10px;
         right: 10px;
-        margin-right: 40px;
+        
         margin-top: 20px;
       }
     
@@ -444,7 +444,7 @@ footer{
     
       .menu-navegacion {
         width: 40%; /* Establecer un ancho adecuado para dispositivos móviles */
-        margin-right: 40px;
+
       }
     
       .menu-navegacion a {
@@ -519,10 +519,15 @@ footer{
     .titulo-final{
         font-size: 20px;
     }
-    .image-container image{
+    .image-container{
         justify-content: center;
-        width: 10%;
-        height: 10%;
+        max-width: 100%;
+        max-height: 100%;
+        overflow: hidden;
+    }
+    .imagenlogro{
+        width: 350px;
+        height: 300px;
     }
     .mapa{
         max-width: 100%; /* Hacer que el mapa no sea más ancho que su contenedor */
