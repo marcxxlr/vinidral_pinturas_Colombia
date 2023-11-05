@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>VINIDRAL Ltda</title>
+    <link rel="shortcut icon" href="image/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Mapa de Google</title>
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header class="header" id="inicio">
+        <div class="menu-button">
+            <img src="image/hamburguesa.svg" alt="" height="50" width="50"> 
+        </div>
+        <nav class="menu-navegacion">
+            <a href="#inicio">Inicio</a>
+            <a href="#acercade">Acerca de</a>
+            <a href="#portafolio">Portafolio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#reconocimientos">Reconocimientos</a>
+            <a href="#map">Ubicacion</a>
+            <!--<a href="#formulariocliente">Solicitud |</a>-->
+            <a href="#footer">Contacto</a>
+        </nav>   
+        <section class="textos-header" id="inicio">
+            <img src="image/logovinid.png" alt="" height="400" width="400">
+            <h2>VINIDRAL</h2>
+            <h2>Fabrica de pinturas Boyacense</h2>
+            <h2>Colores Boyacenses, Calidad Insuperable, Precio Justo</h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-3.10,19.25 C149.99,150.00 325.90,-19.22 505.92,63.66 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+    </header>
+    <main>
+        <section class="contenedorabout-us" id="acercade">
+            <h2 class="titulo">Nuestro producto</h2>
+            <div class="contenedor-about-us">
+                <img src="image/about-us.jpg" alt="image-about-us">
+                <div class="contenido-textos">
+                    <h3><span>1</span>Pintura de gran calidad</h3>
+                    <p>Ofrecemos un servicio de pinturas excepcionales, diseñadas para superar las expectativas en durabilidad y conservación del color. Nuestro compromiso con la excelencia se refleja en cada pincelada. Nuestras pinturas no solo son resistentes al agua, sino que también conservan su color de manera vibrante y duradera, incluso en condiciones adversas. </p>
+                    <h3><span>2</span>Excelente precio</h3>
+                    <p>En nuestra empresa, te ofrecemos la ventaja de precios que son notoriamente mejores que los del mercado. Nuestro compromiso es brindarte un equilibrio perfecto entre calidad y asequibilidad. Creemos que todos merecen acceder a productos de alta calidad a precios accesibles, y es precisamente eso lo que te ofrecemos.</p>
+                </div>
+            </div>
+        </section>
+        <section class="portafolio" id="portafolio">
+            <div class="contenedor">
+                <h2 class="titulo">Portafolio</h2>
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src="image/img3.jpg" alt="" height="250" width="400">
+                        <div class="hover-galeria">
+                            <img src="image/bx-pointer.svg" alt="">
+                            <p>Ventas individuales</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="image/img4.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="image/bx-pointer.svg" alt="">
+                            <p>Maquinaria y equipos especializados</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="image/img1.jpg" alt="" height="200">
+                        <div class="hover-galeria">
+                            <img src="image/bx-pointer.svg" alt="">
+                            <p>Calidad en nuestro servicio</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="image/img2.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="image/bx-pointer.svg" alt="">
+                            <p>Ventas al por mayor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="recognition" id="reconocimientos">
+            <h2 class="titulo">Reconocimientos</h2>
+            <div class="image-container">
+                <img class="image" src="image/logro.jpg" alt="Logro" height="500" width="750">
+                <div class="description">Vinidral obtiene reconocimiento por parte de Compensar por su compromiso con el emprendimiento y la calidad</div>
+                <div class="description"></div>
+            <p></p>
+        </section>
+        <script>
+            const imageContainer = document.querySelector('.image-container');
+            const description = document.querySelector('.description');
+
+            imageContainer.addEventListener('mouseenter', () => {
+            description.style.display = 'block';
+            });
+
+            imageContainer.addEventListener('mouseleave', () => {
+            description.style.display = 'none';
+            });
+        </script>
+        <section class="about-service" id="servicios">
+            <div class="contenedor">
+                <h2 class="titulo">Nuestros Servicios</h2>
+                <div class="servicio-cont"> 
+                    <div class="servicio-ind">
+                        <img src="image/logo1.jpg" alt="">
+                        <h3>Ventas al por mayor</h3>
+                        <p>Somos una fábrica con amplia capacidad de producción, ofreciendo una variedad de colores a precios competitivos. Nuestro enfoque en calidad y eficiencia se refleja en todo lo que hacemos.</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="image/logo2.jpg" alt="">
+                        <h3>Para el hogar</h3>
+                        <p>Nuestro producto especializado añade durabilidad y colores vibrantes a tu hogar a un precio asequible. Dale vida a tus espacios con nuestra solución de alta calidad.</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="image/logo3.jpg" alt="">
+                        <h3>Distribucion nacional</h3>
+                        <p>Realizamos envíos a nivel nacional para brindarte acceso a nuestros productos de alta calidad en cualquier parte del país</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <!--<section class="about-form" id="formulariocliente">
+        <div class="contenedor">
+            <h2 class="titulo">Formulario de Pedido</h2>
+        
+            <form action="" class="formulario">
+                <input type="text" class="formulario__input">
+                <label for="" class="formulario__label">Nombre</label>
+                <input type="text" class="formulario__input">
+                <label for="" class="formulario__label">Correo</label>
+                <input type="text" class="formulario__input">
+                <label for="" class="formulario__label">Telefono</label>
+                <input type="text" class="formulario__input">
+                <label for="" class="formulario__label">Mensaje</label>
+                <input type="submit" class="formulario_submit">
+            </form>
+        </div>
+    </section>  -->
+    <section class="mapa" id="map">
+        <h2 class="titulo">Ubicacion</h2>
+        <h3 class="ubicados">Estamos Ubicados en Tunja, Boyaca</h3>
+        <p class="direccion">Cra10#56-72</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.0086368981492!2d-73.34956684229!3d5.56573573334903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a7c0c924efc15%3A0xcf1dc4b94338888f!2sCra.%2010%20%2356a-39%2C%20Tunja%2C%20Boyac%C3%A1!5e0!3m2!1ses!2sco!4v1698944658934!5m2!1ses!2sco" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+ 
+    <footer id="footer">
+        <h2 class="titulo">Contacto</h2>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <a href="https://wa.link/5rq56s" class="href">
+                    <img src="image/bxl-whatsapp.svg" alt="" height="40" width="40">
+                </a>
+                <h4>Whatsapp</h4>
+                <p>3202393294</p>
+            </div>
+            <div class="content-foo">
+                <a href="https://www.facebook.com/profile.php?id=61552495692312" class="href">
+                    <img src="image/bxl-facebook.svg" alt="" height="40" width="40">
+                </a>
+                <h4>Facebook</h4>
+            </div>
+            <div class="content-foo">
+                <a href="https://instagram.com/vinidral_pinturas_colombia?igshid=MzRlODBiNWFlZA==" class="href">
+                    <img src="image/bxl-instagram.svg" alt="" height="40" width="40">
+                </a>
+                <h4>Instagram</h4>
+            </div>
+            <div class="content-foo">
+                <img src="image/bxl-gmail.svg" alt="" height="40" width="40">
+                <h4>Gmail</h4>
+                <p>cohidral@gmail.com</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; VINIDRAL | Fabrica de pinturas Boyacense</h2>
+    </footer>
+    <script src="form.js"></script>     
+</body>
+</html>
